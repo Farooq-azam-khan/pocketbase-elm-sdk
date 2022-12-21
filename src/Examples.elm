@@ -14,3 +14,8 @@ adminData =
     pb 
     |> PocketBase.admins
     |> PocketBase.authWithPassword "test@example.com" "123456"
+
+createRecord formData = 
+    pb
+    |> collections "example"
+    |> create formData 
